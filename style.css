@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600;700&display=swap');
+
+/***************************** General ********************************/
+
+* {
+    margin: 0;
+}
+
+/********** HEADER **********/
+
+/* Background */
+
+header{
+    background: radial-gradient(rgb(139, 195, 245), #1294b8);
+    font-family: 'Poppins';
+    font-weight: 200;
+}
+
+/* Barre de navigation */
+
+nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo a {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.menu a {
+    padding: 10px;
+}
+
+.reseaux a {
+    padding: 5px;
+}
+
+/* Section Acceuil introduction */
+
+.acceuil-introduction{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.acceuil-introduction img {
+    height: 60%;
+    width: 60%;
+}
+
+.acceuil-introduction h1 {
+    font-family: 'Poppins';
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+} 
+
+.acceuil-introduction p {
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.acceuil-introduction .email-form {
+    font-weight: 300;
+    background: white;
+    display: inline-block;
+    padding: 20px 20px 20px 20px;
+    border-radius: 50px;
+}
+
+
+
+
