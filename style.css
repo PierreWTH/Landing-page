@@ -23,6 +23,7 @@ nav {
     justify-content: center;
     justify-content: space-around;
     align-items: center;
+    padding-top: 10px;
 }
 
 nav a {
@@ -48,17 +49,23 @@ nav a {
 
 .acceuil-introduction{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    width: 50%;
+    width: 75%;
+    justify-content: center;
     margin: auto;
     padding-top: 80px;
     padding-bottom: 80px;
 }
 
+.intro {
+    margin-right: 100px;
+    max-width: 300px;
+}
 .acceuil-introduction img {
-    height: 60%;
-    width: 60%;
+    height: 600px;
+    width: 600px;
 }
 
 .acceuil-introduction h1 {
@@ -69,16 +76,34 @@ nav a {
 } 
 
 .acceuil-introduction p {
+    text-align: justify;
     font-weight: 300;
     margin-bottom: 30px;
 }
 
-.acceuil-introduction .email-form {
+.email-form {
     font-weight: 300;
     background: white;
     display: inline-block;
-    padding: 20px 20px 20px 20px;
+    padding: 13px 190px 13px 20px;
     border-radius: 50px;
+}
+
+.email-form input {
+    border: 0px;
+    font-family: 'Poppins';
+    color: grey;
+    outline: 0;
+}
+
+.email-form .submit {
+    border: 0px;
+    font-family: 'Poppins';
+    background: #269CC2;
+    color: white;
+    padding: 10px 25px 10px 25px;
+    border-radius: 50px;
+    
 }
 
 
