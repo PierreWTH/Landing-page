@@ -290,7 +290,7 @@ nav a:hover {
     font-family: 'Poppins';
     text-align: center;
     color: white;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 600;
 }
 
@@ -298,6 +298,8 @@ nav a:hover {
     font-family: 'Poppins';
     color: white;
     text-align: center;
+    margin: 20px 0px 20px 0px;
+    font-size: 20px;
 }
 
 .parallax-button {
@@ -306,21 +308,42 @@ nav a:hover {
     border-radius: 5px;
     color: white;
     font-family: 'Poppins';
+    font-size: 20px;
     border: solid white 1px;
-    margin : auto
+    transition: 0.5s;
+    width: 200px;
+    margin: auto;
 }
 
-.parallax {
+
+
+.parallax-button:hover {
+    color: black;
+    background: white;
+    transform: translateY(-10px);
+
+}
+
+.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #000000;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url(/img/parallax.png);
     background-attachment: fixed; 
-    height: 400px;
-    top: 0;  
+    background-position: center;
+    height: 600px;
+     
 }
 
-.parallax  {
+.parallax-img{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
 
+/********** SECTION BLOG **********/
+
+.blog {
+    height: 1000px;
+}
