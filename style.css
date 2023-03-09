@@ -4,6 +4,7 @@
 
 * {
     margin: 0;
+    padding: 0;
 }
 
 h2{
@@ -24,12 +25,13 @@ h2{
 
 /* Background */
 
-header{
+.acceuil-introduction{
     background: radial-gradient(rgb(139, 195, 245), #1294b8);
     width: 100%;
     font-family: 'Poppins';
     font-weight: 300;
 }
+    
 
 /* Barre de navigation */
 
@@ -68,34 +70,35 @@ nav a:hover {
 
 /* Section Acceuil introduction */
 
-.acceuil-introduction{
+.intro {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: auto;
-    padding-top: 30px;
-    padding-bottom: 130px;
+    max-width: 80%; 
+    
 }
 
-.intro {
+.contenu {
     max-width: 400px;
-    margin-right: 50px;
+    margin-right: 120px;
 }
-.acceuil-introduction img {
+
+.intro img {
     display: block;
     height: auto;
     width: 100%;
     max-width: 650px;
-    margin-left: 50px;
 }
 
 .acceuil-introduction h1 {
     font-family: 'Poppins';
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 700;
     margin-bottom: 30px;
+    
 } 
 
 .acceuil-introduction p {
@@ -138,19 +141,19 @@ nav a:hover {
 
 /********** PRODUCT FEATURES **********/
 
-.intro-products-features{
+.products-features{
     font-family: 'Poppins';
-    padding-top: 20px;
-    padding-bottom: 20px;
     text-align: center;
     width: 100%;
 }
 
-.intro-products-features .p-top {
-    padding-top: 15px;
-    color: grey;
-    padding-bottom: 30px;
+.pf-intro {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
 
+.pf-intro h2 {
+    font-size: 40px;
 }
 
 /* Product FlexCards*/
@@ -163,17 +166,23 @@ nav a:hover {
 
 .card{
     background: radial-gradient(rgb(139, 195, 245), #1294b8);
-    margin: 10px 10px 10px 10px;
+    margin: 10px 15px 10px 15px;
     border-radius: 10px;
-    max-width: 200px;
-    padding: 70px 70px 70px 70px ;
+    max-width: 400px;
+    height: 400px;
     color: white;
     transition: 0.5s;
 }
 
 .card i {
-    font-size: 40px;
+    font-size: 50px;
+    padding-top: 30px;
     padding-bottom: 20px;
+}
+
+.card p {
+    font-size: 24px;
+    padding: 30px
 }
 
 .card:hover{
@@ -184,44 +193,134 @@ nav a:hover {
 
 .intro-team {
     text-align: center;
-    
 }
 
-#team-card-container {
-    display: flex;
-    flex-wrap: flex;
-    justify-content: center;
+#team-container {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+ margin-top: 80px;
+}
+
+#team-container li {
+    margin-top: 20px;
+    list-style: none;
     font-family: 'Poppins';
+    text-align: center;
 }
 
-.team-card{
-
-    margin: 10px 80px 80px 10px;
+#team-container h4{
+    font-size: 25px;
 }
 
-.team-card img{
+.p-grey-member{
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.nom-member{
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.img-member {
+    
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 150px;
+}
+
+.img-member img{
     display: block;
     height: auto;
     width: 100%;
     max-width: 300px;
     border-radius: 180px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    transition: 0.5s;
+    filter: grayscale(1);
+}
+
+.img-member:hover img{
+    transform: scale(1.1);
+    filter: grayscale(0);
     
 }
 
-.team-intro {
+
+.img-member:hover .reseaux-img{
+    top: 80px;
+    left: 35px;
+    opacity: 1;
+}
+
+.reseaux-img{
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top : -80px;
+    left: 0px;
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+
+.reseaux-img i {
+    margin: 5px;
+    padding: 5px;
+    background: white;
+    border-radius: 50px;
+}
+
+.reseaux-img a {
+    color: black;
+    text-decoration: none;
+}
+
+/********** PARRALAX **********/
+
+.parallax{ 
+    height: 300px;
+    width: 100%;
+}
+
+
+.parallax-titre{
+    font-family: 'Poppins';
     text-align: center;
-
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
 }
 
-.team-card p {
-
-    color: grey;
-    font-size: 11px;
+.parallax-p {
+    font-family: 'Poppins';
+    color: white;
+    text-align: center;
 }
 
+.parallax-button {
+    background-color: transparent;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Poppins';
+    border: solid white 1px;
+    margin : auto
+}
 
+.parallax {
+    background-color: #000000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url(/img/parallax.png);
+    background-attachment: fixed; 
+    height: 400px;
+    top: 0;  
+}
 
-
+.parallax  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
