@@ -20,6 +20,9 @@ h2{
 
 }
 
+li {
+    list-style: none;
+}
 
 /********** HEADER **********/
 
@@ -69,6 +72,7 @@ nav a:hover {
 }
 
 /* Section Acceuil introduction */
+
 
 .intro {
     display: flex;
@@ -356,7 +360,7 @@ nav a:hover {
 
 #blog-container {
     display: flex;
-    min-height: 100vh;
+    min-height: 60vh;
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -423,4 +427,170 @@ nav a:hover {
 
 .credit-texte {
     font-size: 12px;
+}
+
+/********** PRICING **********/
+
+.section-pricing{
+    font-family: 'Poppins';
+}
+
+.intro-pricing{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.intro-pricing img {
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+.intro-pricing .pricing-text{
+    margin : 20px 0px 20px 0px;
+    color: grey;
+}
+
+.number {
+    display: flex;
+    margin: 20px 0px 20px 0px;
+}
+
+.number p{
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+.number span{
+    color: grey;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.contenu-pricing{
+    width:40%;
+    margin-right: 80px;
+}
+
+.contenu-pricing button {
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #3f8ffe;
+    color: white;
+}
+
+/******* Flexcards pricing ******/
+
+
+/* Intro */
+
+.general-pricing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    background: #f3f3f3;
+    margin: auto;
+}
+
+.our-pricing h3 {
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.our-pricing p {
+    text-align: center;
+}
+
+/* Cards */
+
+.pricing-cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    margin-top: 30px;
+}
+
+.pricing-cards button {
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #3f8ffe;
+    color: white;
+}
+
+
+
+.cards-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px 20px 0px;
+}
+
+.pricing-cards{
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.cards-details-title {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    padding-top: 20px;
+    position: relative;
+}
+
+.cards-details-title .price {
+    font-size: 60px;
+    color:#3f8ffe;
+}
+.cards-details-title .month {
+    font-size: 11px;
+    color: grey;
+}
+
+.fa-circle-xmark {
+    color: red;
+}
+
+.fa-circle-check {
+    color: green;
+}
+
+.pricing-button button{
+    width: 100%;
+}
+.li-pricing-card{
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.middle-element{
+    transform: translateY(-20px);
+    margin: 0px 30px 0px 30px;
+}
+
+.sales {
+    font-size: 14px;
+    line-height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: #3f8ffe;
+    color: white;
+    padding: 15px;
+    border-radius: 0px 10px 0px 10px;
 }
