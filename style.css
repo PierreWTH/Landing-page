@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 h2{
@@ -431,8 +432,10 @@ nav a:hover {
 
 /********** PRICING **********/
 
+
 .section-pricing{
     font-family: 'Poppins';
+    margin-bottom: 100px;
 }
 
 .intro-pricing{
@@ -593,4 +596,44 @@ nav a:hover {
     color: white;
     padding: 15px;
     border-radius: 0px 10px 0px 10px;
+}
+
+/******* FOOTER ******/
+
+footer {
+    font-family: "Poppins";
+    background: #26272b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+footer i, p {
+    color: grey;
+}
+
+.footer-socials{
+    margin-top: 60px;
+}
+
+.footer-socials i{
+    padding: 10px 10px;
+    border: 1px solid grey;
+    margin: 0 40px 0 40px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.footer-cgv{
+    margin: 20px 0 20px 0;
+    display: flex;
+}
+
+.footer-cgv p {
+    margin: 0 30px 0 30px ;
 }
