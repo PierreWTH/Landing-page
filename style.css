@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
+    scroll-behavior: smooth;
 }
 
 h2{
@@ -98,7 +99,7 @@ nav a:hover {
   color: white;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size:30px;
   font-weight: 600px;
   display: block;
 }
@@ -125,9 +126,6 @@ nav a:hover {
 }
 
 /* Section Acceuil introduction */
-.page-acceuil{
-    min-height: 100vh;
-}
 
 @media screen and (max-width: 1200px) {
     nav {
@@ -141,14 +139,16 @@ nav a:hover {
 
 .intro {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: auto;
+    min-height: 95vh;
 }
 
 .contenu {
-    max-width: 400px;
+    width: 400px;
     margin-right: 120px;
 }
 
@@ -161,14 +161,14 @@ nav a:hover {
     max-width: 650px;
 }
 
-.acceuil-introduction h1 {
+.contenu h1 {
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 30px;
     
 } 
 
-.acceuil-introduction p {
+.contenu p {
     text-align: justify;
     font-weight: 300;
     margin-bottom: 30px;
@@ -205,6 +205,7 @@ nav a:hover {
     border: 0px;
     color: grey;
     outline: 0;
+    
 }
 
 .email-form .submit {
