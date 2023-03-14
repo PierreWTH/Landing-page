@@ -39,7 +39,6 @@ body{
     width: 100%;
     font-family: 'Poppins';
     font-weight: 300;
-    min-height: 100vh;
 }
     
 
@@ -78,23 +77,82 @@ nav a:hover {
     padding: 5px;
 }
 
-/* Section Acceuil introduction */
+/*Menu Burger*/
 
+
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+  position: relative;
+  display: none;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: transparent;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: transparent;
+  color: white
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: transparent;
+  color : white
+}
+
+/* Section Acceuil introduction */
+.page-acceuil{
+    min-height: 100vh;
+}
+
+@media screen and (max-width: 1200px) {
+    nav {
+        display: none;
+    }
+
+    .topnav {
+        display: block;
+    }
+}
 
 .intro {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin: auto;
-    max-width: 100%; 
 }
 
 .contenu {
     max-width: 400px;
     margin-right: 120px;
 }
+
+
 
 .intro img {
     display: block;
@@ -116,18 +174,35 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1200px) {
+    .contenu{
+        margin-right: 0px;
+        padding: 30px;
+    }
+
+    .acceuil-introduction h1{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .acceuil-introduction img{
+        padding: 20px;
+    }
+
+    }
+
 .email-form {
     display: flex;
+    justify-content: space-between;
     font-weight: 300;
     background: white;
     padding: 10px 10px 10px 20px;
     border-radius: 50px;
-    margin-right: 30px;
+
 }
 
 .email-form input {
     border: 0px;
-    margin-right: 90px;
     color: grey;
     outline: 0;
 }
@@ -185,12 +260,7 @@ nav a:hover {
     transition: 0.5s;
 }
 
-@media screen and (max-width: 1200px) {
-    .card{
-        max-width: 170px;
-        height: 170px;
-    }
-    }
+
     
     .products-features{
     display: flex;
@@ -205,8 +275,7 @@ nav a:hover {
 
 .card i {
     font-size: 50px;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding : 30px 0px 30px 0px;
 }
 
 .card p {
@@ -217,6 +286,23 @@ nav a:hover {
 .card:hover{
     transform: translateY(-15px);
 }
+
+@media screen and (max-width: 1200px) {
+    .card{
+        max-width: 200px;
+        height: 200px;
+    }
+
+    .card p {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .card i {
+        font-size: 30px;
+        padding: 10px 0px 10px 0px;
+    }
+    }
 
 /********** TEAM MEMBERS **********/
 
@@ -614,10 +700,6 @@ nav a:hover {
     .middle-element{
         transform: translateY(0px);
         margin: 0px;
-    }
-
-    .pricing-cards-container{
-        
     }
 
 }
